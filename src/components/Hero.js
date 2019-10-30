@@ -13,7 +13,7 @@ const Hero = () => (
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellendus magni repellat. Eum
 						veniam a vel ipsam! Ipsam, facere repellendus.
 					</SubTitle>
-					<PrimaryButton margin={5px}>More</PrimaryButton>
+					<HeroBtn>More</HeroBtn>
 				</TextWrapper>
 				<LogoWrapper>
 					<IconLogo />
@@ -49,12 +49,12 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
 	font-size: 45px;
-	color: #fff;
+	color: #58595b;
 `;
 
 export const SubTitle = styled.h3`
 	font-size: 18px;
-	color: #fff;
+	color: #58595b90;
 `;
 export const Text = styled.h3`
 	font-size: 14px;
@@ -86,9 +86,23 @@ const IconLogo = styled(Logo)`
 
     
         path  {
+            fill: #38ADA9;
             animation: ${float} 6s ease-in-out infinite;
             transition: all 1s ease-in-out;
             transform: translatey(0px);
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
         }
 `;
+const HeroBtn = styled(PrimaryButton)`
+    margin-left: 0;
+    margin-top: 20px;
+    color: #fff;
+    border-color: #38ADA9;
+    background: #38ADA9;
+
+     &:hover {
+         background: none;
+         color: #38ADA9;
+         border-color:  #38ADA9;
+     }
+ `;

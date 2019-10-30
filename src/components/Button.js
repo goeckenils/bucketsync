@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import React from 'react';
 
 export const Button = styled.button`border-radius: ${(props) => (props.borderRadius ? props.borderRadius : '4px')};`;
 
 export const PrimaryButton = styled(Button)`
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
+  font-family: "Gilroy Regular";
   padding: 0 46px;
   height: 52px;
   outline: none;
   font-weight: 600;
-  margin: ${(props) => this.props.margin};
+  margin: 10px;
   white-space: normal;
   color: #38ADA9;
   text-align: center;
