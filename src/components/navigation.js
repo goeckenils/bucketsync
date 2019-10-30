@@ -55,9 +55,8 @@ export const Menu = styled.div`
 	align-items: center;
 `;
 export const MenuItem = styled.div`padding: 5px 10px;`;
-export const LogoWrapper = styled.div`padding: 10px 20px;`;
+export const LogoWrapper = styled.div``;
 export const EditLogo = styled(Logo)`
-width: 180px;
 height: 55px;
 `;
 export const ItemWrapper = styled.div`

@@ -13,7 +13,7 @@ const Hero = () => (
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellendus magni repellat. Eum
 						veniam a vel ipsam! Ipsam, facere repellendus.
 					</SubTitle>
-					<HeroBtn>More</HeroBtn>
+					<HeroBtn>Mehr</HeroBtn>
 				</TextWrapper>
 				<LogoWrapper>
 					<IconLogo />
@@ -95,7 +95,7 @@ const IconLogo = styled(Logo)`
 `;
 const HeroBtn = styled(PrimaryButton)`
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 40px;
     color: #fff;
     border-color: #38ADA9;
     background: #38ADA9;
