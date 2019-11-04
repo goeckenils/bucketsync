@@ -4,7 +4,7 @@ import { PrimaryButton } from '../components/Button';
 import IconForward from '../images/forward.svg';
 
 const Casestudie = () => (
-	<Section>
+	<Section className="casebg">
 		<Container>
 			<Heading>Fallstudie</Heading>
 			<Underline />
@@ -79,7 +79,6 @@ export const CaseBtn = styled(PrimaryButton)`
 `;
 
 export const Section = styled.section`
-	background: #f7f8f8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
