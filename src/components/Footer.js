@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import IconFacebook from '../images/facebook.svg';
+import IconLinkedin from '../images/linkedin.svg';
+import IconXing from '../images/xing.svg';
+import IconInsta from '../images/instagram.svg';
 
 const Footer = () => (
 	<div>
@@ -77,11 +81,18 @@ const Footer = () => (
 						</Link>
 					</Column>
 					<Column>
-						<SocialCircle />
-						<SocialCircle />
-						<SocialCircle />
-						<SocialCircle />
-						<SocialCircle />
+						<SocialCircle>
+							<Instagram />
+						</SocialCircle>
+						<SocialCircle>
+							<Facebook />
+						</SocialCircle>
+						<SocialCircle>
+							<Xing />
+						</SocialCircle>
+						<SocialCircle>
+							<Linkedin />
+						</SocialCircle>
 					</Column>
 				</GridContainer>
 			</Container>
@@ -104,8 +115,8 @@ export const Section = styled.section`
 `;
 
 export const SocialCircle = styled.div`
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	border-radius: 10px;
 	display: flex;
 	justify-content: center;
@@ -166,4 +177,37 @@ export const GridContainer = styled.div`
 export const Column = styled.div`
 	display: flex;
 	flex-direction: column;
+`;
+
+export const Facebook = styled(IconFacebook)`
+    width: 25px;
+    height: 25px;
+
+    path {
+        fill: #fff !important;
+    }
+`;
+export const Instagram = styled(IconInsta)`
+    width: 25px;
+    height: 25px;
+
+    path {
+        fill: #fff !important;
+    }
+`;
+export const Linkedin = styled(IconLinkedin)`
+    width: 25px;
+    height: 25px;
+
+    path {
+        fill: #fff !important;
+    }
+`;
+export const Xing = styled(IconXing)`
+    width: 25px;
+    height: 25px;
+
+    path {
+        fill: #fff !important;
+    }
 `;
