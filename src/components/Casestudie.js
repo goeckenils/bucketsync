@@ -6,7 +6,7 @@ import IconForward from '../images/forward.svg';
 const Casestudie = () => (
 	<Section>
 		<Container>
-			<Heading>Casestudie</Heading>
+			<Heading>Fallstudie</Heading>
 			<Underline />
 			<GridContainer>
 				<Block>
@@ -120,7 +120,7 @@ export const Picture = styled.div``;
 
 export const Title = styled.h1`
 	font-size: 20px;
-	color: #58595b;
+	color: #38ada9;
 	margin: 10px 0px;
 `;
 export const Heading = styled.h1`
