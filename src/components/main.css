@@ -14,16 +14,19 @@ body {
 @font-face {
 	font-family: 'Gilroy Regular';
 	src: url('./Fonts/Gilroy-Regular.ttf');
+	format: ("ttf");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Gilroy Medium';
 	src: url('./Fonts/Gilroy-Medium.ttf');
+	format: ("ttf");
 	font-weight: medium;
 }
 @font-face {
 	font-family: 'Gilroy Bold';
 	src: url('./Fonts/Gilroy-Bold.ttf');
+	format: ("ttf");
 	font-weight: Bold;
 }
 

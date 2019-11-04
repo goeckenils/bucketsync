@@ -8,23 +8,24 @@ import Iconprotection from '../images/protection.svg';
 const Services = () => (
 	<Section>
 		<Container>
-			<Heading>Dienstleistungen</Heading>
+			<Heading>Features</Heading>
+			<Underline />
 			<GridContainer>
 				<Service className="Hoverable">
 					<Circle>
 						<Backup className="Hoverable" />
 					</Circle>
-					<TextWrapper>
-						<Title className="Hoverable">Datensicherung</Title>
-						<SubTitle className="Hoverable">
-							Hören Sie mit der Verwaltung von Backups auf. Beschleunigen Sie den geschäftlichen Zugriff
-							auf Daten mit sofortigen Wiederherstellungen und Klonen. Verwenden Sie eine Lösung, die vor
-							Ort, via Edge oder in der Cloud ausgeführt werden kann.
-						</SubTitle>
-					</TextWrapper>
+					<Title className="Hoverable">Datensicherung</Title>
+					<SubTitle className="Hoverable">
+						Hören Sie mit der Verwaltung von Backups auf. Beschleunigen Sie den geschäftlichen Zugriff auf
+						Daten mit sofortigen Wiederherstellungen und Klonen. Verwenden Sie eine Lösung, die vor Ort, via
+						Edge oder in der Cloud ausgeführt werden kann.
+					</SubTitle>
 				</Service>
 				<Service className="Hoverable">
-					<Recovery className="Hoverable" />
+					<Circle>
+						<Recovery className="Hoverable" />
+					</Circle>
 					<Title className="Hoverable">Ransomware-Wiederherstellung</Title>
 					<SubTitle className="Hoverable">
 						Minimieren Sie die Ausfallzeiten Ihres Unternehmens durch neue Ransomware-Angriffe mit
@@ -32,7 +33,9 @@ const Services = () => (
 					</SubTitle>
 				</Service>
 				<Service className="Hoverable">
-					<Protection className="Hoverable" />
+					<Circle>
+						<Protection className="Hoverable" />
+					</Circle>
 					<Title className="Hoverable">Daten-Governance</Title>
 					<SubTitle className="Hoverable">
 						Entdecken Sie Ihre sensibelsten Daten mit automatisierter Datenklassifizierung. Treiben Sie die
@@ -40,7 +43,31 @@ const Services = () => (
 					</SubTitle>
 				</Service>
 				<Service className="Hoverable">
-					<Cloud className="Hoverable" />
+					<Circle>
+						<Cloud className="Hoverable" />
+					</Circle>
+					<Title className="Hoverable">Cloud-Mobilität</Title>
+					<SubTitle className="Hoverable">
+						Reduzieren Sie die Zeit bis zur Cloud, lokalisieren Sie Daten mit vorausschauender Suche schnell
+						in der Cloud und koordinieren Sie die Cloud-Notfallwiederherstellung mit automatisiertem
+						Failover und Failback.
+					</SubTitle>
+				</Service>
+				<Service className="Hoverable">
+					<Circle>
+						<Cloud className="Hoverable" />
+					</Circle>
+					<Title className="Hoverable">Cloud-Mobilität</Title>
+					<SubTitle className="Hoverable">
+						Reduzieren Sie die Zeit bis zur Cloud, lokalisieren Sie Daten mit vorausschauender Suche schnell
+						in der Cloud und koordinieren Sie die Cloud-Notfallwiederherstellung mit automatisiertem
+						Failover und Failback.
+					</SubTitle>
+				</Service>
+				<Service className="Hoverable">
+					<Circle>
+						<Cloud className="Hoverable" />
+					</Circle>
 					<Title className="Hoverable">Cloud-Mobilität</Title>
 					<SubTitle className="Hoverable">
 						Reduzieren Sie die Zeit bis zur Cloud, lokalisieren Sie Daten mit vorausschauender Suche schnell
@@ -64,14 +91,23 @@ export const Section = styled.section`
 	align-items: center;
 `;
 
+export const Underline = styled.div`
+	width: 100px;
+	height: 1px;
+	background: #38ada9;
+	margin-bottom: 40px;
+`;
+
 export const Circle = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 80px;
 	width: 80px;
+	text-align: center;
+	margin-bottom: 10px;
 	background: #38ada920;
-	border-radius: 80px;
+	border-radius: 15px;
 `;
 
 export const Container = styled.div`
@@ -109,16 +145,15 @@ export const TextWrapper = styled.div``;
 export const GridContainer = styled.div`
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: ". . ." ". . .";
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: ". ." ". .";
 `;
 
 export const Service = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-	border: 1px solid #38ada9;
 	border-radius: 4px;
 	display: flex;
 	align-items: center;

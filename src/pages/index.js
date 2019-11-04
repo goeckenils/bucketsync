@@ -4,6 +4,7 @@ import Navigation from '../components/navigation';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import ContactBtn from '../components/ContactBtn';
+import Casestudie from '../components/Casestudie';
 import styled from 'styled-components';
 
 const IndexPage = () => (
@@ -12,6 +13,7 @@ const IndexPage = () => (
 		<Hero />
 		<Services />
 		<ContactBtn />
+		<Casestudie />
 	</div>
 );
 
