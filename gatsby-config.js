@@ -17,7 +17,10 @@ module.exports = {
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{
-			resolve: `gatsby-plugin-manifest`
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				icon: `src/assets/favicon.svg`
+			}
 		},
 		{
 			resolve: 'gatsby-plugin-react-svg',
