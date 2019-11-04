@@ -34,7 +34,7 @@ export const BTN = styled.div`
 	height: 60px;
 	border: 1px solid #38ada9;
 	background: #fff;
-	box-shadow: rgba(12, 0, 46, 0.2) 0px 4px 6px 0px;
+	box-shadow: rgba(12, 0, 46, 0.1) 0px 4px 6px 0px;
 
 	&:hover {
 		background: #38ada9;

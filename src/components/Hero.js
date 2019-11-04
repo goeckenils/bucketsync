@@ -101,8 +101,8 @@ const HeroBtn = styled(PrimaryButton)`
     background: #fff;
 
      &:hover {
-         background: #ffffff80;
-         color: #38ADA9;
-         border-color:  #38ADA9;
+         background: #38ADA990;
+         color: #fff;
+         border-color:  #fff;
      }
  `;
