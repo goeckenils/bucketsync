@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`border-radius: ${(props) => (props.borderRadius ? props.borderRadius : '4px')};`;
+export const Button = styled.button`border-radius: ${(props) => (props.borderRadius ? props.borderRadius : '2px')};`;
 
 export const PrimaryButton = styled(Button)`
   border-width: 1px;

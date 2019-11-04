@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Iconbackup from '../images/backup.svg';
 import Iconcloud from '../images/cloud.svg';
 import Iconrecovery from '../images/recovery.svg';
@@ -11,7 +11,9 @@ const Services = () => (
 			<Heading>Dienstleistungen</Heading>
 			<GridContainer>
 				<Service className="Hoverable">
-					<Backup className="Hoverable" />
+					<Circle>
+						<Backup className="Hoverable" />
+					</Circle>
 					<TextWrapper>
 						<Title className="Hoverable">Datensicherung</Title>
 						<SubTitle className="Hoverable">
@@ -54,12 +56,22 @@ const Services = () => (
 export default Services;
 
 export const Section = styled.section`
-	background: #f8f8f8;
+	/* background: #f8f8f8; */
 	border-bottom: 1px solid #58595b40;
 	border-top: 1px solid #58595b40;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+`;
+
+export const Circle = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 80px;
+	background: #38ada920;
+	border-radius: 80px;
 `;
 
 export const Container = styled.div`
@@ -117,11 +129,9 @@ export const Service = styled.div`
 		color: #fff;
 		transform: translateY(-10px);
 		box-shadow: rgba(12, 0, 46, 0.2) 0px 4px 6px 0px;
-	}
 
-	.Hoverable,
-	.Hoverable path {
-		&:hover {
+		.Hoverable,
+		.Hoverable path {
 			fill: #fff;
 			color: #fff;
 		}

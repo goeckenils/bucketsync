@@ -49,12 +49,12 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
 	font-size: 45px;
-	color: #58595b;
+	color: #fff;
 `;
 
 export const SubTitle = styled.h3`
 	font-size: 18px;
-	color: #58595b90;
+	color: #ffffff95;
 `;
 export const Text = styled.h3`
 	font-size: 14px;
@@ -86,7 +86,7 @@ const IconLogo = styled(Logo)`
 
     
         path  {
-            fill: #38ADA9;
+            fill: #fff;
             animation: ${float} 6s ease-in-out infinite;
             transition: all 1s ease-in-out;
             transform: translatey(0px);
@@ -96,12 +96,12 @@ const IconLogo = styled(Logo)`
 const HeroBtn = styled(PrimaryButton)`
     margin-left: 0;
     margin-top: 40px;
-    color: #fff;
-    border-color: #38ADA9;
-    background: #38ADA9;
+    color: #38ADA9;
+    border-color: #fff;
+    background: #fff;
 
      &:hover {
-         background: none;
+         background: #ffffff80;
          color: #38ADA9;
          border-color:  #38ADA9;
      }
