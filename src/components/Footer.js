@@ -122,7 +122,12 @@ export const SocialCircle = styled.div`
 	justify-content: center;
 	margin: 5px;
 	align-items: center;
+	transition: all 0.3s ease-in-out;
 	background: #38ada9;
+
+	&:hover {
+		background: #38ada990;
+	}
 `;
 
 export const FooterLine = styled.div`
