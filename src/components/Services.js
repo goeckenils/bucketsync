@@ -12,7 +12,7 @@ const Services = () => (
 			<Underline />
 			<GridContainer>
 				<Service className="Hoverable">
-					<Circle>
+					<Circle className="bubble">
 						<Backup className="Hoverable" />
 					</Circle>
 					<Title className="Hoverable">Datensicherung</Title>
@@ -21,9 +21,10 @@ const Services = () => (
 						Daten mit sofortigen Wiederherstellungen und Klonen. Verwenden Sie eine Lösung, die vor Ort, via
 						Edge oder in der Cloud ausgeführt werden kann.
 					</SubTitle>
+					<ReadMore className="readmore">Lesen sie mehr</ReadMore>
 				</Service>
 				<Service className="Hoverable">
-					<Circle>
+					<Circle className="bubble">
 						<Recovery className="Hoverable" />
 					</Circle>
 					<Title className="Hoverable">Ransomware-Wiederherstellung</Title>
@@ -31,9 +32,10 @@ const Services = () => (
 						Minimieren Sie die Ausfallzeiten Ihres Unternehmens durch neue Ransomware-Angriffe mit
 						ML-basierter Erkennung, umfassender Folgenabschätzung und Wiederherstellung mit nur einem Klick.
 					</SubTitle>
+					<ReadMore className="readmore">Lesen sie mehr</ReadMore>
 				</Service>
 				<Service className="Hoverable">
-					<Circle>
+					<Circle className="bubble">
 						<Protection className="Hoverable" />
 					</Circle>
 					<Title className="Hoverable">Daten-Governance</Title>
@@ -41,9 +43,10 @@ const Services = () => (
 						Entdecken Sie Ihre sensibelsten Daten mit automatisierter Datenklassifizierung. Treiben Sie die
 						Compliance von immer strengeren Datenschutzbestimmungen voran.
 					</SubTitle>
+					<ReadMore className="readmore">Lesen sie mehr</ReadMore>
 				</Service>
 				<Service className="Hoverable">
-					<Circle>
+					<Circle className="bubble">
 						<Cloud className="Hoverable" />
 					</Circle>
 					<Title className="Hoverable">Cloud-Mobilität</Title>
@@ -52,9 +55,10 @@ const Services = () => (
 						in der Cloud und koordinieren Sie die Cloud-Notfallwiederherstellung mit automatisiertem
 						Failover und Failback.
 					</SubTitle>
+					<ReadMore className="readmore">Lesen sie mehr</ReadMore>
 				</Service>
 				<Service className="Hoverable">
-					<Circle>
+					<Circle className="bubble">
 						<Cloud className="Hoverable" />
 					</Circle>
 					<Title className="Hoverable">Cloud-Mobilität</Title>
@@ -63,9 +67,10 @@ const Services = () => (
 						in der Cloud und koordinieren Sie die Cloud-Notfallwiederherstellung mit automatisiertem
 						Failover und Failback.
 					</SubTitle>
+					<ReadMore className="readmore">Lesen sie mehr</ReadMore>
 				</Service>
 				<Service className="Hoverable">
-					<Circle>
+					<Circle className="bubble">
 						<Cloud className="Hoverable" />
 					</Circle>
 					<Title className="Hoverable">Cloud-Mobilität</Title>
@@ -74,6 +79,7 @@ const Services = () => (
 						in der Cloud und koordinieren Sie die Cloud-Notfallwiederherstellung mit automatisiertem
 						Failover und Failback.
 					</SubTitle>
+					<ReadMore className="readmore">Lesen sie mehr</ReadMore>
 				</Service>
 			</GridContainer>
 		</Container>
@@ -108,6 +114,17 @@ export const Circle = styled.div`
 	margin-bottom: 10px;
 	background: #38ada920;
 	border-radius: 15px;
+`;
+
+export const ReadMore = styled.div`
+	color: #38ada9;
+	font-size: 16px;
+	margin: 10px 0px;
+	flex: start;
+	&:hover {
+		text-decoration: underline;
+		text-decoration-color: #38ada9;
+	}
 `;
 
 export const Container = styled.div`
@@ -156,7 +173,6 @@ export const Service = styled.div`
 	padding: 20px;
 	border-radius: 4px;
 	display: flex;
-	align-items: center;
 	transition: all 0.4s ease-in-out;
 
 	&:hover {
@@ -169,6 +185,13 @@ export const Service = styled.div`
 		.Hoverable path {
 			fill: #fff;
 			color: #fff;
+		}
+		.readmore {
+			color: #fff;
+			text-decoration-color: #fff;
+		}
+		.bubble {
+			background: #ffffff20;
 		}
 	}
 `;

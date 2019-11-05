@@ -13,74 +13,74 @@ const Footer = () => (
 				<GridContainer>
 					<Column>
 						<Title>WEBSITE</Title>
-						<Link>
+						<Link to="/">
 							<Text>Home</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Unsere Methode</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Leistungen</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Unternehmen</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Karriere</Text>
 						</Link>
 					</Column>
 					<Column>
 						<Title>LEISTUNGEN</Title>
-						<Link>
+						<Link to="/">
 							<Text>Beratung & Konzept</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Individuelle Software</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Mobile Applikation</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Design & Gestaltung</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Projektmanagement</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Wartung & Weiterentwicklung</Text>
 						</Link>
 					</Column>
 					<Column>
 						<Title>KARRIERE</Title>
-						<Link>
+						<Link to="/">
 							<Text>Karriere & Jobs</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Kununu</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Indeed</Text>
 						</Link>
 					</Column>
 					<Column>
 						<Title>ÜBER UNS</Title>
-						<Link>
+						<Link to="/">
 							<Text>Unternehmen</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Presse</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Kontakt</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Impressum</Text>
 						</Link>
-						<Link>
+						<Link to="/">
 							<Text>Datenschutz</Text>
 						</Link>
 					</Column>
-					<Column>
+					<SocialColumn>
 						<SocialCircle>
 							<Instagram />
 						</SocialCircle>
@@ -93,7 +93,7 @@ const Footer = () => (
 						<SocialCircle>
 							<Linkedin />
 						</SocialCircle>
-					</Column>
+					</SocialColumn>
 				</GridContainer>
 			</Container>
 		</Section>
@@ -177,6 +177,11 @@ export const GridContainer = styled.div`
 export const Column = styled.div`
 	display: flex;
 	flex-direction: column;
+`;
+export const SocialColumn = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
 `;
 
 export const Facebook = styled(IconFacebook)`

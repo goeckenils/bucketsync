@@ -24,7 +24,7 @@ const Casestudie = () => (
 						</Text>
 						<CaseBtn>
 							Lesen sie mehr
-							<Forward classname="Hoverable" />
+							<Forward className="Hoverable" />
 						</CaseBtn>
 					</TextWrapper>
 				</Block>
@@ -135,7 +135,7 @@ export const SubTitle = styled.h3`
 	line-height: 1.4;
 `;
 export const Text = styled.h3`
-	font-size: 14px;
+	font-size: 16px;
 	color: #58595b90;
 	margin-top: 10px;
 `;

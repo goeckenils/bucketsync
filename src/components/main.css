@@ -33,7 +33,7 @@ body {
 .custom-bg {
 	width: 100%;
 	height: 100%;
-	background-image: url(../assets/bgv2.svg);
+	background-image: url(../assets/versuch.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -53,6 +53,14 @@ body {
 	width: 100%;
 	height: 100%;
 	background-image: url(../assets/casebgv2.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.Form {
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/Form.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

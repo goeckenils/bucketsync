@@ -6,6 +6,7 @@ import Services from '../components/Services';
 import ContactBtn from '../components/ContactBtn';
 import Casestudie from '../components/Casestudie';
 import Footer from '../components/Footer';
+import Form from '../components/Form';
 
 const IndexPage = () => (
 	<div>
@@ -14,6 +15,7 @@ const IndexPage = () => (
 		<Services />
 		<ContactBtn />
 		<Casestudie />
+		<Form />
 		<Footer />
 	</div>
 );
