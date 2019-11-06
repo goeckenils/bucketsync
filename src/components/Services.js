@@ -161,7 +161,7 @@ export const Text = styled.h3`
 export const TextWrapper = styled.div``;
 export const GridContainer = styled.div`
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 40px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas: ". ." ". .";
@@ -173,25 +173,20 @@ export const Service = styled.div`
 	padding: 20px;
 	border-radius: 4px;
 	display: flex;
-	transition: all 0.4s ease-in-out;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .02), 0 5px 22px -8px rgba(0, 0, 0, .1);
+	transition: all 0.4s ease;
 
 	&:hover {
-		background: #38ada9;
-		color: #fff;
-		transform: translateY(-10px);
-		box-shadow: rgba(12, 0, 46, 0.2) 0px 4px 6px 0px;
+		box-shadow: 0 0 1px rgba(0, 0, 0, .03), 0 8px 26px -4px rgba(0, 0, 0, .1);
+		transition: all .3s ease;
+		transform: scale(1.05) translateY(-2.5%);
 
 		.Hoverable,
 		.Hoverable path {
-			fill: #fff;
-			color: #fff;
 		}
 		.readmore {
-			color: #fff;
-			text-decoration-color: #fff;
 		}
 		.bubble {
-			background: #ffffff20;
 		}
 	}
 `;

@@ -61,6 +61,8 @@ export const Section = styled.section`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: #fff;
+	z-index: 10;
 `;
 
 export const Container = styled.div`

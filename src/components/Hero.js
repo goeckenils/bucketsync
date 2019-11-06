@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Logo from '../images/LogoIcon.svg';
 import { PrimaryButton } from './Button';
+import arrowdown from '../images/arrowdown.svg';
 
 const Hero = () => (
 	<Container>
@@ -19,6 +20,10 @@ const Hero = () => (
 					<IconLogo />
 				</LogoWrapper>
 			</Wrapper>
+			<ArrowContainer>
+				<Text>scroll</Text>
+				<ArrowDown />
+			</ArrowContainer>
 		</Background>
 	</Container>
 );
@@ -28,13 +33,14 @@ export default Hero;
 export const Container = styled.div`
 	width: 100vh;
 	height: 100vh;
-	z-index: 0;
+	z-index: 1;
 `;
 
 export const Background = styled.div`
 	width: 100%;
 	height: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: #fff;
@@ -79,6 +85,22 @@ const float = keyframes`
 		transform: translatey(0px);
 	}
 `;
+const bounce = keyframes`
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+`;
 
 const IconLogo = styled(Logo)`
     width: 400px;
@@ -106,3 +128,21 @@ const HeroBtn = styled(PrimaryButton)`
          border-color:  #fff;
      }
  `;
+
+export const ArrowDown = styled(arrowdown)`
+	width: 40px;
+	height: 40px;
+	 path {
+		 fill: #fff;
+	 }
+ `;
+
+export const ArrowContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-moz-animation: ${bounce} 2s infinite;
+	-webkit-animation: ${bounce} 2s infinite;
+	animation: ${bounce} 2s infinite;
+	flex-direction: column;
+`;
