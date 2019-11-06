@@ -7,11 +7,13 @@ import ContactBtn from '../components/ContactBtn';
 import Casestudie from '../components/Casestudie';
 import Footer from '../components/Footer';
 import Form from '../components/Form';
+import Usp from '../components/Usp';
 
 const IndexPage = () => (
 	<div>
 		<Navigation />
 		<Hero />
+		<Usp />
 		<Services />
 		<ContactBtn />
 		<Casestudie />
