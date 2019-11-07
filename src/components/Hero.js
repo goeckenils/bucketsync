@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import Logo from '../images/LogoIcon.svg';
 import { PrimaryButton } from './Button';
 import arrowdown from '../images/arrowdown.svg';
+import Iso from '../images/LogoIso.svg';
 
 const Hero = () => (
 	<Container>
@@ -104,7 +105,8 @@ const bounce = keyframes`
 
 const IconLogo = styled(Logo)`
     width: 400px;
-    height: 400px;
+	height: 400px;
+
 
     
         path  {
