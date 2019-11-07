@@ -112,6 +112,7 @@ export const Section = styled.section`
 	justify-content: center;
 	align-items: center;
 	padding-top: 50px;
+	background: #58595b;
 `;
 
 export const SocialCircle = styled.div`
@@ -133,8 +134,7 @@ export const SocialCircle = styled.div`
 export const FooterLine = styled.div`
 	width: 100%;
 	height: 40px;
-	background: #f1f1f1;
-	margin-top: 40px;
+	background: #58595b;
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -151,7 +151,7 @@ export const FTitle = styled.div`
 `;
 export const Text = styled.div`
 	font-size: 11px;
-	color: #58595b;
+	color: #fff;
 	margin: 10px 0px;
 `;
 

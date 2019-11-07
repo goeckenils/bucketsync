@@ -12,7 +12,7 @@ import Usp from '../components/Usp';
 const IndexPage = () => (
 	<div>
 		<Navigation />
-		<Hero />
+		<Hero scrollTo="usp" />
 		<Usp />
 		<Services />
 		<ContactBtn />

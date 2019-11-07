@@ -89,7 +89,7 @@ const Services = () => (
 export default Services;
 
 export const Section = styled.section`
-	/* background: #f8f8f8; */
+	background: #fff;
 	border-bottom: 1px solid #58595b40;
 	border-top: 1px solid #58595b40;
 	display: flex;
@@ -176,6 +176,7 @@ export const Service = styled.div`
 	display: flex;
 	box-shadow: 0 0 5px rgba(0, 0, 0, .02), 0 5px 22px -8px rgba(0, 0, 0, .1);
 	transition: all 0.4s ease;
+	background: #fff;
 
 	&:hover {
 		box-shadow: 0 0 1px rgba(0, 0, 0, .03), 0 8px 26px -4px rgba(0, 0, 0, .1);

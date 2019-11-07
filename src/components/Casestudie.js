@@ -4,7 +4,7 @@ import { PrimaryButton } from '../components/Button';
 import IconForward from '../images/forward.svg';
 
 const Casestudie = () => (
-	<Section className="casebg">
+	<Section>
 		<Container>
 			<Heading>Fallstudie</Heading>
 			<Underline />

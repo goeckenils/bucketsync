@@ -5,29 +5,41 @@ import { PrimaryButton } from './Button';
 import arrowdown from '../images/arrowdown.svg';
 import Iso from '../images/LogoIso.svg';
 
-const Hero = () => (
-	<Container>
-		<Background className="custom-bg">
-			<Wrapper>
-				<TextWrapper>
-					<Title>Backup Recovery Service</Title>
-					<SubTitle>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellendus magni repellat. Eum
-						veniam a vel ipsam! Ipsam, facere repellendus.
-					</SubTitle>
-					<HeroBtn>Mehr</HeroBtn>
-				</TextWrapper>
-				<LogoWrapper>
-					<IconLogo />
-				</LogoWrapper>
-			</Wrapper>
-			<ArrowContainer>
-				<Text>scroll</Text>
-				<ArrowDown />
-			</ArrowContainer>
-		</Background>
-	</Container>
-);
+const Hero = ({ scrollTo }) => {
+	const scrollToFn = (e) => {
+		e.preventDefault();
+
+		const scrollToEl = document.querySelector(`#${scrollTo}`);
+		scrollToEl &&
+			scrollToEl.scrollIntoView({
+				behavior: 'smooth'
+			});
+	};
+
+	return (
+		<Container>
+			<Background className="custom-bg">
+				<Wrapper>
+					<TextWrapper>
+						<Title>Backup Recovery Service</Title>
+						<SubTitle>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellendus magni repellat.
+							Eum veniam a vel ipsam! Ipsam, facere repellendus.
+						</SubTitle>
+						<HeroBtn onClick={scrollToFn}>Mehr</HeroBtn>
+					</TextWrapper>
+					<LogoWrapper>
+						<IconLogo />
+					</LogoWrapper>
+				</Wrapper>
+				<ArrowContainer onClick={scrollToFn}>
+					<Text>scroll</Text>
+					<ArrowDown />
+				</ArrowContainer>
+			</Background>
+		</Container>
+	);
+};
 
 export default Hero;
 
@@ -106,10 +118,7 @@ const bounce = keyframes`
 const IconLogo = styled(Logo)`
     width: 400px;
 	height: 400px;
-
-
-    
-        path  {
+		path  {
             fill: #fff;
             animation: ${float} 6s ease-in-out infinite;
             transition: all 1s ease-in-out;

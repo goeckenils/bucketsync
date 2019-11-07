@@ -8,6 +8,7 @@ import room from '../images/Room.svg';
 const Usp = () => (
 	<Section>
 		<Container>
+			<a id="usp" />
 			<GridContainer>
 				<TextBlock>
 					<Title>Treiben Sie Compliance und Governance voran</Title>
@@ -61,7 +62,6 @@ export const Section = styled.section`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fff;
 	z-index: 10;
 `;
 
