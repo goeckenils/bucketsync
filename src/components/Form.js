@@ -5,7 +5,7 @@ import { Textarea } from '../components/Form/Textarea';
 import { PrimaryButton } from '../components/Button';
 
 const Form = () => (
-	<Section className="Form">
+	<Section className="case2bg">
 		<Container>
 			<GridContainer>
 				<FlexContainer>
@@ -52,12 +52,11 @@ export const Section = styled.section`
 
 export const ContactBtn = styled(PrimaryButton)`
     width: 100%;
-    border: #fff;
+    border-color: #38ada9;
 `;
 
 export const Container = styled.div`
-	width: 1100px;
-	height: 900px;
+	width: 900px;
 	padding: 20px 0px;
 	display: flex;
 	flex-direction: column;
@@ -67,24 +66,21 @@ export const Container = styled.div`
 
 export const GridContainer = styled.div`
 	display: grid;
-	grid-gap: 80px;
-	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: ". .";
+	grid-template-areas: "." ".";
 `;
 
 export const Block = styled.div`
 	display: flex;
 	background: #ffffff;
-	height: 450px;
 	border-radius: 4px;
 	align-items: center;
 	padding: 40px;
 `;
 
 export const FormContainer = styled.div`
-	width: 500px;
-	height: 600px;
 	flex-direction: column;
 	display: flex;
 	justify-content: center;

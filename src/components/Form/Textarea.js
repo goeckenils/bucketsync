@@ -7,8 +7,7 @@ export const Textarea = styled.textarea`
 	border-radius: 2px;
 	font-size: 1rem;
 	background-color: #fff;
-	-webkit-box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04);
-	box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .02), 0 5px 22px -8px rgba(0, 0, 0, .1);
 	border: 1px solid #fff;
 	margin: 10px;
 	transition: all 0.3s ease-in;

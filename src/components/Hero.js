@@ -145,4 +145,6 @@ export const ArrowContainer = styled.div`
 	-webkit-animation: ${bounce} 2s infinite;
 	animation: ${bounce} 2s infinite;
 	flex-direction: column;
+	position: absolute;
+	bottom: 10px;
 `;

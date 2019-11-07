@@ -170,6 +170,7 @@ export const GridContainer = styled.div`
 export const Service = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	padding: 20px;
 	border-radius: 4px;
 	display: flex;
