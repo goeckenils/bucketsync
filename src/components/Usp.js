@@ -72,6 +72,10 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		width: 0;
+		padding: 20px 0px;
+	}
 `;
 
 export const GridContainer = styled.div`
@@ -79,7 +83,10 @@ export const GridContainer = styled.div`
 	grid-gap: 80px;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: ". .";
+	@media (min-width: 0px) and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
 `;
 export const TextBlock = styled.div`
 	display: flex;
@@ -105,14 +112,26 @@ export const ImageBlock = styled.div`
 export const DataSecurity = styled(DaSec)`
     width: 450px;
     height: 450px;
+      @media (min-width: 0px) and (max-width: 1024px) {
+        width: 300px;
+        height: 300px;
+	}
 `;
 export const Server = styled(Serv)`
     width: 450px;
     height: 450px;
+    @media (min-width: 0px) and (max-width: 1024px) {
+        width: 300px;
+        height: 300px;
+	}
 `;
 export const Room = styled(room)`
     width: 450px;
     height: 450px;
+      @media (min-width: 0px) and (max-width: 1024px) {
+        width: 300px;
+        height: 300px;
+	}
 `;
 
 export const Title = styled.h1`

@@ -66,9 +66,18 @@ export const CaseBtn = styled(PrimaryButton)`
     margin-left: 0;
     margin-top: 20px;
     display: flex;
-    background: none;
+	background: none;
+	width: 100%;
+	background: #fff;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		.Hoverable path {
+			display: none;
+			position: absolute;
+
+		}
+	}
 
     &:hover {
         .Hoverable path {
@@ -97,6 +106,10 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	@media (min-width: 0px) and (max-width: 1024px) {
+		width: 0;
+	}
 `;
 
 export const GridContainer = styled.div`
@@ -104,12 +117,15 @@ export const GridContainer = styled.div`
 	grid-gap: 20px;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: ". .";
+
+	@media (min-width: 0px) and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 300px;
+	}
 `;
 
 export const Block = styled.div`
-	width: 600px;
-	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -34,7 +34,7 @@ const Form = () => (
 						<Textarea placeholder="Anliegen" />
 					</InputGroup>
 					<InputGroup>
-						<ContactBtn>Senden</ContactBtn>
+						<ContactBtn>Jetzt Kontakt Anfordern</ContactBtn>
 					</InputGroup>
 				</FormContainer>
 			</GridContainer>
@@ -51,8 +51,10 @@ export const Section = styled.section`
 `;
 
 export const ContactBtn = styled(PrimaryButton)`
-    width: 100%;
-    border-color: #38ada9;
+	border-color: #38ada9;
+	background-color:#38ada9;
+	color:#fff;
+	margin-left: 12px;
 `;
 
 export const Container = styled.div`

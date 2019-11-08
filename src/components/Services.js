@@ -92,9 +92,13 @@ export const Section = styled.section`
 	background: #fff;
 	border-bottom: 1px solid #58595b40;
 	border-top: 1px solid #58595b40;
+	padding: 40px 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		padding: 0;
+	}
 `;
 
 export const Underline = styled.div`
@@ -134,6 +138,10 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		width: 0;
+		padding: 20px 0px;
+	}
 `;
 
 export const Title = styled.h1`
@@ -164,7 +172,11 @@ export const GridContainer = styled.div`
 	grid-gap: 40px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-template-areas: ". ." ". .";
+	@media (min-width: 0px) and (max-width: 1024px) {
+		padding: 20px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
 `;
 
 export const Service = styled.div`
@@ -190,6 +202,9 @@ export const Service = styled.div`
 		}
 		.bubble {
 		}
+	}
+	@media (min-width: 0px) and (max-width: 1024px) {
+		padding: 40px;
 	}
 `;
 

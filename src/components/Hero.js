@@ -47,6 +47,9 @@ export const Container = styled.div`
 	width: 100vh;
 	height: 100vh;
 	z-index: 1;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		width: unset;
+	}
 `;
 
 export const Background = styled.div`
@@ -64,11 +67,20 @@ export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media (min-width: 0px) and (max-width: 1024px) {
+		flex-direction: column;
+		width: unset;
+		padding: 0px 20px;
+	}
 `;
 
 export const Title = styled.h1`
 	font-size: 45px;
 	color: #fff;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		font-size: 28px;
+	}
 `;
 
 export const SubTitle = styled.h3`
@@ -79,9 +91,10 @@ export const Text = styled.h3`
 	font-size: 14px;
 	color: #fff;
 	margin-top: 10px;
+	/* @media (min-width: 0px) and (max-width: 1024px) {font-size: 50px;} */
 `;
 
-export const TextWrapper = styled.div`width: 600px;`;
+export const TextWrapper = styled.div``;
 const LogoWrapper = styled.div``;
 
 const float = keyframes`
@@ -124,7 +137,13 @@ const IconLogo = styled(Logo)`
             transition: all 1s ease-in-out;
             transform: translatey(0px);
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-        }
+		}
+
+			@media (min-width: 0px) and (max-width: 1024px) {
+		width: 150px;
+		height: 150px;
+	}
+		
 `;
 const HeroBtn = styled(PrimaryButton)`
     margin-left: 0;

@@ -103,6 +103,10 @@ export const NavWrapper = styled.div`
 	align-items: center;
 	z-index: 100;
 	box-shadow: ${(props) => (props.inverted ? css`none` : css`rgba(12, 0, 46, 0.06) 0px 4px 6px 0px`)};
+
+	@media (min-width: 0px) and (max-width: 1024px) {
+		display: none;
+	}
 `;
 export const InvertedNavWrapper = styled.div`
 	display: flex;
@@ -114,8 +118,11 @@ export const InvertedNavWrapper = styled.div`
 	align-items: center;
 	z-index: 100;
 	box-shadow: none;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		display: none;
+	}
 `;
-export const Container = styled.div`width: 1100px;`;
+export const Container = styled.div`width: 1250px;`;
 export const Menu = styled.div`
 	display: flex;
 	justify-content: space-between;

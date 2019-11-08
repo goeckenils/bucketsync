@@ -36,6 +36,10 @@ export const BTN = styled.div`
 	background: #fff;
 	box-shadow: rgba(12, 0, 46, 0.1) 0px 4px 6px 0px;
 
+	@media (min-width: 0px) and (max-width: 1024px) {
+		margin: 0 1em 1em 0;
+	}
+
 	&:hover {
 		background: #38ada9;
 

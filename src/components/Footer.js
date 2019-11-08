@@ -169,14 +169,22 @@ export const FContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		padding: 0px 20px;
+		text-align: center;
+	}
 `;
 
 export const GridContainer = styled.div`
 	display: grid;
 	grid-gap: 80px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: ". . . . .";
+	@media (min-width: 0px) and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
 `;
 
 export const Column = styled.div`
@@ -187,6 +195,9 @@ export const SocialColumn = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-top: 40px;
+	@media (min-width: 0px) and (max-width: 1024px) {
+		flex-direction: row;
+	}
 `;
 
 export const Facebook = styled(IconFacebook)`
