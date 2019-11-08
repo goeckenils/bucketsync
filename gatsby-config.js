@@ -19,7 +19,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				icon: `src/assets/favicon.svg`
+				icon: `src/assets/favicon.svg`,
+				theme_color: `#ffffff`
 			}
 		},
 		{
